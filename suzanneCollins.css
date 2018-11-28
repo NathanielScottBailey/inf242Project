@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+}
+
+header{
+   background-color:  #869DC7;
+   background-image: linear-gradient(to right, #869DC7, #2F4054);
+   width: 100%;
+   margin-bottom: 0;
+   height: 100px;
+   padding: 10px 0 10px 10px;
+   border-bottom: solid black 2px;
+
+}
+header img {
+    height: 100px;
+    width: 80px;
+    float: left;
+    border: solid black 2px;
+}
+header h1{
+    float: left;
+    font-size: 40px;
+    margin-left: 100px;
+    color: white;
+    border-bottom: solid black 2px;
+    font-family: "Courier New", Courier, monospace;
+}
+    
+
+
+nav {
+    height: 510px;
+    width: 180px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00306E;
+    overflow-x: hidden;
+    color: white;
+    font-size: 30px;
+    float: left;
+
+}
+
+
+.sidenav a, .dropdown-btn {
+    padding: 15px 8px 30px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 180px;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    
+}
+.sidenav a{
+    font-size: 22px;
+}
+.sidenav a:active, .dropdown-btn:active {
+     background-color: #4F628E;
+}
+.sidenav a:default, .dropdown-btn:default {
+     background-color: #00306E;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: white;
+    background-color: #142140;
+}
+.sidenav a:visited, .dropdown-btn:visited {
+
+    background-color: #061539;
+}
+
+
+.main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+}
+
+
+.active {
+    background-color: #142140;
+    color: white;
+}
+
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+    overflow: hidden;
+    width: 200px;
+
+}
+
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#flexbox
+    {   display: flex;
+        flex-direction: row;    }
+
+aside
+    {   flex: 2;
+        order: 3;
+        width: 200px;
+        color: #000000;
+        margin: 25px 15px 0 0; 
+        font-size: 25px; 
+        border-left: solid black 2px;
+         }
+aside h3
+    {   padding: 0 0 2px 2px;
+        border-bottom: 1px solid #000000;
+        margin: 10px;
+        font-size: 0.90em;
+        color: #00005D;
+        }
+aside h4
+    {   font-size: 0.80em;
+        margin: 10px;
+        padding-left: 15px;
+          }
+aside p
+    {   padding-left: 15px;
+        position: sticky; }
+.news
+    {   font-size: 0.75em;
+        margin: 10px;   }
+aside ul
+    {   list-style-type: none;
+        margin: 10px;  
+        padding-left: 15px; }
+aside li a
+    {   text-decoration: none;
+        font-size: 0.75em;
+        color: #000000;  }
+aside a:active{
+    color: yellow;
+}
+aside a:default{
+    color: black;
+}
+aside a:visited{
+    color: red;
+}
+aside a:hover{
+    color: purple;
+}
+main
+    {   flex: 7;
+        order: 2;
+        margin: 20px 30px 20px 30px; }
+main img{
+    float: right;
+    margin: 0 0 20px 40px;
+
+}
+main p
+    {   padding-left: 30px; font-size: 24px; }
+#home_main_img
+    {   float: right;
+        margin: 0px 30px 10px 30px;   }
+footer
+    {   text-align: center; 
+        font-size: 0.70em;
+        font-style: italic; 
+        margin-top: 30px; }
+#worksList a
+    {   text-decoration: none;
+        padding: 10px;
+        font-size: 1.25em;
+        color: #000000; }
+#worksList li
+    {   padding: 5px;  }
+.worksTable
+    {   border: 0;  }
+.worksTable caption
+    {   text-align: left;   }
+.worksTable td
+    {   padding: 0 0 30px 25px;
+           }
+.worksImg
+    {   width: 200px;
+        height: auto;   }
+
+footer{
+    font-size: 20px;
+    border-top: solid black 2px;
+}

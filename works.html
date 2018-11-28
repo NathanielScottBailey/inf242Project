@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Suzanne Collins</title>
+    <link rel="stylesheet" type="text/css" href="./suzanneCollins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+         <img src="images/suzanneCollins_header.jpg" alt="Suzanne Collins Photo" id="headerimg">
+            <h1>Suzanne Collins</h1>
+    </header>
+    
+        
+        <nav class="sidenav">
+             <a href="#">Home</a>
+             <button class="dropdown-btn">Works 
+                <i class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-container">
+                <a href="./workFantasy.html">Fantasy</a>
+                <a href="#">Picture Books</a>
+                
+             </div>
+             <a href="#contact">News</a>
+             <button class="dropdown-btn">About 
+                <i class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-container">
+                <a href="./about.html">Biography</a>
+                <a href="./interview.html">Interview</a>
+               
+             </div>
+          
+        </nav>
+
+    
+    <script type="text/javascript">
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+</script>   
+        <div id="flexbox">
+     <aside>
+                <h3>Featured Work</h3>
+                <h4>Year of the Jungle</h4>
+                <p class="news">Picture book about how it feels to have a parent deployed in a war.<br><br></p>
+                <h3>Quick Links</h3>
+                <p class="news">
+                    <ul>
+                        <li><a href="https://www.amazon.com/">Amazon</a></li>
+                        <li><a href="https://www.authorsguild.org/">Author's Guild</a></li>
+                        <li><a href="https://www.barnesandnoble.com/">Barnes and Noble</a></li>
+                        <li><a href="https://www.indiebound.org/">Indie Bound</a></li>
+                        <li><a href="https://www.penguinrandomhouseaudio.com/">Listening Library</a></li>
+                        <li><a href="https://www.npr.org/">NPR</a></li>
+                        <li><a href="http://www.penguin.com/">Penguin Group</a></li>
+                        <li><a href="http://www.scholastic.com/home/">Scholastic</a></li>
+                    </ul>
+                </p>
+            </aside>
+            <main>
+                <aside>
+                <h3>Featured Work</h3>
+                <h4>Year of the Jungle</h4>
+                <p class="news">Picture book about how it feels to have a parent deployed in a war.<br><br></p>
+                <h3>Quick Links</h3>
+                <p class="news">
+                    <ul>
+                        <li><a href="https://www.amazon.com/">Amazon</a></li>
+                        <li><a href="https://www.authorsguild.org/">Author's Guild</a></li>
+                        <li><a href="https://www.barnesandnoble.com/">Barnes and Noble</a></li>
+                        <li><a href="https://www.indiebound.org/">Indie Bound</a></li>
+                        <li><a href="https://www.penguinrandomhouseaudio.com/">Listening Library</a></li>
+                        <li><a href="https://www.npr.org/">NPR</a></li>
+                        <li><a href="http://www.penguin.com/">Penguin Group</a></li>
+                        <li><a href="http://www.scholastic.com/home/">Scholastic</a></li>
+                    </ul>
+                </p>
+            </aside>
+            <main>
+                <h2>Works by Genre</h2>
+                
+                <ul id="worksList">
+                    <li><a href="worksFantasy.html">Fantasy</a></li>
+                    <li><a href="worksPicturebooks.html">Picture Books</a></li>
+                    <li><a href="worksScifi.html">Science Fiction</a></li>
+                </ul>
+
+            </main>
+        </div>
+        <footer>
+            Copyright &copy; 2018
+        </footer>
+       
+</body>
+</html>

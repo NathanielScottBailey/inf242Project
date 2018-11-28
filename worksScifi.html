@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>workScifi - Suzanne Collins</title>
+    <link rel="stylesheet" type="text/css" href="./suzanneCollins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+         <img src="images/suzanneCollins_header.jpg" alt="Suzanne Collins Photo" id="headerimg">
+            <h1>Suzanne Collins</h1>
+    </header>
+    
+        
+        <nav class="sidenav">
+             <a href="./index.html">Home</a>
+             <button class="dropdown-btn">Works 
+                <i class="fa fa-caret-down"></i>
+
+             </button>
+             <div class="dropdown-container">
+                <a href="./workFantasy.html">Fantasy</a>
+                <a href="./workspicturesBooks.html">Picture Books</a>
+                <a href="./worksScifi.html">Science Fiction</a>
+                
+             </div>
+             <a href="#contact">News</a>
+             <button class="dropdown-btn">About 
+                <i class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-container">
+                <a href="./about.html">Biography</a>
+                <a href="./interview.html">Interview</a>
+               
+             </div>
+          
+        </nav>
+
+    
+    <script type="text/javascript">
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+</script>   
+        <div id="flexbox">
+     <aside>
+                <h3>Featured Work</h3>
+                <h4>Year of the Jungle</h4>
+                <p class="news">Picture book about how it feels to have a parent deployed in a war.<br><br></p>
+                <h3>Quick Links</h3>
+                <p class="news">
+                    <ul>
+                        <li><a href="https://www.amazon.com/">Amazon</a></li>
+                        <li><a href="https://www.authorsguild.org/">Author's Guild</a></li>
+                        <li><a href="https://www.barnesandnoble.com/">Barnes and Noble</a></li>
+                        <li><a href="https://www.indiebound.org/">Indie Bound</a></li>
+                        <li><a href="https://www.penguinrandomhouseaudio.com/">Listening Library</a></li>
+                        <li><a href="https://www.npr.org/">NPR</a></li>
+                        <li><a href="http://www.penguin.com/">Penguin Group</a></li>
+                        <li><a href="http://www.scholastic.com/home/">Scholastic</a></li>
+                    </ul>
+                </p>
+            </aside>
+            <main>
+                <h2>Works - Science Fiction</h2>
+                
+                <table class="worksTable">
+                    <caption><h3>The Hunger Games trilogy</h3></caption>
+                    <tr>
+                        <td><img src="images/hungerGames.jpg" alt="The Hunger Games Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>The Hunger Games</h4>
+                            Katniss is a 16-year-old girl living with her mother and younger sister in the poorest district of Panem, the remains of what used 
+                            be North America. Long ago the districts waged war on the Capitol and were defeated. As part of the surrender terms, each district 
+                            agreed to send one boy and one girl to appear in an annual televised event called, "The Hunger Games." The terrain, rules, and level 
+                            of audience participation may change but one thing is constant: kill or be killed. When her sister is chosen by lottery, Katniss steps 
+                            up to go in her place.(Scholastic Press, 2008)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Catching_fire.jpg" alt="Catching Fire Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>Catching Fire</h4>
+                            Much to her shock, Katniss has fueled an unrest she's afraid she cannot stop. And what scares her more is that she's not entirely convinced 
+                            she should try. As time draws near for Katniss and Peeta to visit the districts on the Capitol's cruel Victory Tour, the stakes are higher 
+                            than ever. If they can't prove, without a shadow of a doubt, that they are lost in their love for each other, the consequences will be 
+                            horrifying.(Scholastic Press, 2009)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/mockingjay.jpg" alt="Mockingjay Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>Mocking Jay</h4>
+                            Katniss Everdeen, girl on fire, has survived, even though her home has been destroyed. There are rebels. There are new leaders. A revolution 
+                            is unfolding.(Scholastic Press, 2010)
+                        </td>
+                    </tr>
+                </table>
+
+            </main>
+        </div>
+        <footer>
+            Copyright &copy; 2018
+        </footer>
+       
+</body>
+</html>

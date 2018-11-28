@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>workFantasy - Suzanne Collins</title>
+    <link rel="stylesheet" type="text/css" href="./suzanneCollins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+         <img src="images/suzanneCollins_header.jpg" alt="Suzanne Collins Photo" id="headerimg">
+            <h1>Suzanne Collins</h1>
+    </header>
+    
+        
+        <nav class="sidenav">
+             <a href="./index.html">Home</a>
+             <button class="dropdown-btn">Works 
+                <i class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-container">
+                <a href="./workFantasy.html">Fantasy</a>
+                <a href="./workspicturesBooks.html">Picture Books</a>
+                <a href="./worksScifi.html">Science Fiction</a>
+             </div>
+             <a href="#contact">News</a>
+             <button class="dropdown-btn">About 
+                <i class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-container">
+                <a href="./about.html">Biography</a>
+                <a href="./interview.html">Interview</a>
+               
+             </div>
+          
+        </nav>
+
+        
+
+    
+    <script type="text/javascript">
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+</script>
+    <div id="flexbox">
+     <aside>
+                <h3>Featured Work</h3>
+                <h4>Year of the Jungle</h4>
+                <p class="news">Picture book about how it feels to have a parent deployed in a war.<br><br></p>
+                <h3>Quick Links</h3>
+                <p class="news">
+                    <ul>
+                        <li><a href="https://www.amazon.com/">Amazon</a></li>
+                        <li><a href="https://www.authorsguild.org/">Author's Guild</a></li>
+                        <li><a href="https://www.barnesandnoble.com/">Barnes and Noble</a></li>
+                        <li><a href="https://www.indiebound.org/">Indie Bound</a></li>
+                        <li><a href="https://www.penguinrandomhouseaudio.com/">Listening Library</a></li>
+                        <li><a href="https://www.npr.org/">NPR</a></li>
+                        <li><a href="http://www.penguin.com/">Penguin Group</a></li>
+                        <li><a href="http://www.scholastic.com/home/">Scholastic</a></li>
+                    </ul>
+                </p>
+            </aside>
+            <main>
+                <h2>Works - Fantasy</h2>
+                
+                <table class="worksTable">
+                    <caption><h3>The Underland Chronicles</h3></caption>
+                    <tr>
+                        <td><img src="images/Gregor1.jpg" alt="Gregor the Overlander Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>Gregor the Overlander</h4>
+                            Meet Gregor, a kid from New York City, who falls out of his laundry room into a fantastical subterranean world called the Underland. 
+                            Accompanied by his toddler sister, Boots, he encounters giant talking creatures-- cockroaches, bats, spiders and rats--
+                            and an unusual society of humans. And they’re all expecting him...(Scholastic Press, 2003)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Gregor2.jpg" alt="Gregor and the Prphecy of Bane Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>Gregor and the Prophecy of Bane</h4>
+                            When giant roaches kidnap Boots and spirit her back to the Underland, Gregor follows to retrieve her. Soon he discovers that they are both 
+                            implicated in “The Prophecy of Bane,” which warns of the dangers of a terrifying white rat. Guess whose job it is to destroy it? 
+                            (Scholastic Press, 2004)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Gregor3.jpg" alt="Gregor and the Curse of the Warmbloods Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>Gregor and the Curse of the Warmblookds</h4>
+                            Gregor and Boots must return to the Underland to help find a cure for a deadly plague called the Curse of the Warmbloods. Gregor is desperate 
+                            to succeed because, along with several of his Underland friends, a member of his own family is stricken. (Scholastic Press, 2005)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Gregor4.jpg" alt="Gregor and the Marks of Secret" class="worksImg"></td>
+                        <td>
+                            <h4>Gregor and the Marks of Secret</h4>
+                            Gregor sets out to solve a mystery involving the Underland mice and ends up discovering a terrible secret. This book leads right into the fifth 
+                            and final book of the series, "Gregor and the Code of Claw."(Scholastic Press, 2006)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Gregor5.jpg" alt="Gregor and the Code of Claw" class="worksImg"></td>
+                        <td>
+                            <h4>Gregor and the Code of Claw</h4>
+                            Everyone in the Underland has been taking great pains to keep The Prophecy of Time from Gregor. Gregor knows it must say something awful but he 
+                            never imagined just how awful: It calls for the warrior's death. Now, with an army of rats approaching, and his mom and sister still in Regalia, 
+                            Gregor the warrior must gather up his courage to help defend Regalia and get his family home safely. The entire existence of the Underland is 
+                            in Gregor's hands, and time is running out. There is a code to be cracked, a mysterious new princess, Gregor's burgeoning dark side, and a war 
+                            to end all wars.(Scholastic Press, 2007)
+                        </td>
+                    </tr>
+                </table>
+
+            </main>
+        </div>
+        <footer>
+            Copyright &copy; 2018
+        </footer>
+
+
+
+</body>
+</html>

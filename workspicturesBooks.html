@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>workspicturesBook- Suzanne Collins</title>
+    <link rel="stylesheet" type="text/css" href="./suzanneCollins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+         <img src="images/suzanneCollins_header.jpg" alt="Suzanne Collins Photo" id="headerimg">
+            <h1>Suzanne Collins</h1>
+    </header>
+    
+        
+        <nav class="sidenav">
+             <a href="./index.html">Home</a>
+             <button class="dropdown-btn">Works 
+                <i class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-container">
+                <a href="./workFantasy.html">Fantasy</a>
+                <a href="./workspicturesBooks.html">Picture Books</a>
+                <a href="./worksScifi.html">Science Fiction</a>
+                
+             </div>
+             <a href="#contact">News</a>
+             <button class="dropdown-btn">About 
+                <i class="fa fa-caret-down"></i>
+             </button>
+             <div class="dropdown-container">
+                <a href="./about.html">Biography</a>
+                <a href="./interview.html">Interview</a>
+               
+             </div>
+          
+        </nav>
+
+    
+    <script type="text/javascript">
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+</script>   
+        <div id="flexbox">
+     <aside>
+                <h3>Featured Work</h3>
+                <h4>Year of the Jungle</h4>
+                <p class="news">Picture book about how it feels to have a parent deployed in a war.<br><br></p>
+                <h3>Quick Links</h3>
+                <p class="news">
+                    <ul>
+                        <li><a href="https://www.amazon.com/">Amazon</a></li>
+                        <li><a href="https://www.authorsguild.org/">Author's Guild</a></li>
+                        <li><a href="https://www.barnesandnoble.com/">Barnes and Noble</a></li>
+                        <li><a href="https://www.indiebound.org/">Indie Bound</a></li>
+                        <li><a href="https://www.penguinrandomhouseaudio.com/">Listening Library</a></li>
+                        <li><a href="https://www.npr.org/">NPR</a></li>
+                        <li><a href="http://www.penguin.com/">Penguin Group</a></li>
+                        <li><a href="http://www.scholastic.com/home/">Scholastic</a></li>
+                    </ul>
+                </p>
+            </aside>
+             <main>
+                <h2>Works - Picture Books</h2>
+                
+                <table class="worksTable">
+                    <tr>
+                        <td><img src="images/YOTJ_Cover-330.jpg" alt="Year of the Jungle Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>Year of the Jungle</h4>
+                            When Suzy's father is called to war in a faraway jungle, she struggles to deal with his absence.(Scholastic Press, 2013)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Book_cover--cmc-210.jpg" alt="When Charlie McButton Lost Power Book Cover" class="worksImg"></td>
+                        <td>
+                            <h4>When Charlie McButton Lost Power</h4>
+                            Charlie loves computer games so much, he never plays with anything else - so when the power goes out, he's really in the dark. 
+                            His desperate search for batteries involves his sister's toys and some nasty behavior before he settles down to realize what's 
+                            truly important in his life. Deftly written by Suzanne Collins and nicely illustrated by Mike Lester, When Charlie McButton Lost 
+                            Power is refreshingly original and moving! (Midwest Book Review)
+                        </td>
+                    </tr>
+                </table>
+
+            </main>
+        </div>
+        <footer>
+            Copyright &copy; 2018
+        </footer>
+       
+</body>
+</html>
