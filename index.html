@@ -11,47 +11,34 @@
             <h1>Suzanne Collins</h1>
     </header>
     
-        
-        <nav class="sidenav">
-             <a href="#">Home</a>
-             <button class="dropdown-btn">Works 
-                <i class="fa fa-caret-down"></i>
-             </button>
-             <div class="dropdown-container">
-                <a href="./workFantasy.html">Fantasy</a>
-                <a href="./workspicturesBooks.html">Picture Books</a>
-                <a href="./worksScifi.html">Science Fiction</a>
-                
-             </div>
-             <a href="#contact">News</a>
-             <button class="dropdown-btn">About 
-                <i class="fa fa-caret-down"></i>
-             </button>
-             <div class="dropdown-container">
-                <a href="./about.html">Biography</a>
-                <a href="./interview.html">Interview</a>
-               
-             </div>
-          
-        </nav>
+        <nav id="wrap">
+          <ul class="navbar">
+           <li><a href="./index.html">Home</a></li>
+           <li><a href="#">Works  <i class="fa fa-caret-down"></i></a> 
+            <ul>
+                        <li><a href="./workFantasy.html">Fantasy</a></li>
+               <li><a href="./workspicturesBooks.html">Picture Books</a></li>
+               <li><a href="worksScifi.html">Science Fiction</a></li>
+                      
+            </ul>         
+           </li>
+           <li><a href="#">About  <i class="fa fa-caret-down"></i></a> 
+            <ul>
+                        <li><a href="./about.html">Biography</a></li>
+               <li><a href="./interview.html" >Interview</a></li>
+                        <li><a href="./randomFacts.html">Random Facts</a></li>
+                       
+         
+            </ul>         
+           </li>
+           
+           <li><a href="./contact.html">Contact</a>
+                    
+            </ul>
+       </nav>
 
     
-    <script type="text/javascript">
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-          dropdown[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-              dropdownContent.style.display = "none";
-            } else {
-              dropdownContent.style.display = "block";
-            }
-          });
-        }
-</script>   
+    
         <div id="flexbox">
      <aside>
                 <h3>Featured Work</h3>

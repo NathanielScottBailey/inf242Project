@@ -26,59 +26,99 @@ header h1{
     border-bottom: solid black 2px;
     font-family: "Courier New", Courier, monospace;
 }
-    
-
-
-nav {
-    height: 510px;
-    width: 180px;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    left: 0;
+nav{
+    width: 150px; 
+    height: 10px; 
+    padding-bottom: 10px;
+    margin: 0; 
+    z-index: 1; 
+    position: relative;
     background-color: #00306E;
-    overflow-x: hidden;
-    color: white;
-    font-size: 30px;
     float: left;
 
-}
-
-
-.sidenav a, .dropdown-btn {
-    padding: 15px 8px 30px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    display: block;
-    border: none;
-    background: none;
-    width: 180px;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
     
-}
-.sidenav a{
-    font-size: 22px;
-}
-.sidenav a:active, .dropdown-btn:active {
-     background-color: #4F628E;
-}
-.sidenav a:default, .dropdown-btn:default {
+    }
+.navbar {
+    height: 100%;
+    padding: 0;
+    padding-bottom: 10px;
+    margin: 0;
+    border-right: 1px solid #00306E; 
+    position: absolute;
+    float: left;
+    }
+
+.navbar li  {
+            padding-bottom: 10px;
+            height: 110px;
+            width: 150px; 
+            object-position: top;
+            text-align: center;  
+            list-style: none;  
+            font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+            padding: 0;
+            margin: 0;
+            background-color: #00306E;
+            font-size: 20px;
+            color: white;
+            position: relative;
+           
+            
+
+                        }
+.navbar a   {                           
+        padding: 35px 0 25px 0;  
+        border-left: 1px solid #0026ff; 
+        border-right: 1px solid #0026ff;
+        text-decoration: none; 
+        color: white;
+        display: block;
+        }
+.navbar li:default, a:default {
      background-color: #00306E;
 }
-
-
-.sidenav a:hover, .dropdown-btn:hover {
-    color: white;
-    background-color: #142140;
+.navbar li:active, a:active {
+     background-color: #00306E;
 }
-.sidenav a:visited, .dropdown-btn:visited {
-
+.navbar li:visited, a:visited {
+    background-color: #00306E;
+}
+.navbar li:hover, a:hover {
     background-color: #061539;
 }
 
+.navbar li ul   {
+        display: none;                                    
+        margin: 0; 
+        padding: 0;      
+        margin-left:150px;
+        float:left;
+        margin-top: -45px;
+        height: 0;
+        }               
+
+.navbar li:hover ul     {
+                        display: block; 
+                        z-index: 12;
+                        padding-left: 1px;
+                       
+                        }
+
+.navbar li ul li {
+    background-color: #32598b;
+}
+
+.navbar li ul li a  {
+        border-left: 1px solid #0026ff;
+        border-right: 1px solid #0026ff;
+        border-top: 1px solid #0026ff;
+        z-index: 1001;
+        }
+
+.navbar li ul li a:hover {
+    background-color: #061539;
+    z-index: 1000;
+}
 
 .main {
     margin-left: 200px; 
@@ -123,7 +163,7 @@ aside
         color: #000000;
         margin: 25px 15px 0 0; 
         font-size: 25px; 
-        border-left: solid black 2px;
+        border-left: solid black 1px;
          }
 aside h3
     {   padding: 0 0 2px 2px;
@@ -155,13 +195,14 @@ aside a:active{
     color: yellow;
 }
 aside a:default{
-    color: black;
+    color: white;
 }
 aside a:visited{
     color: red;
 }
 aside a:hover{
-    color: purple;
+    color: purple ;
+    background-color: white !important;
 }
 main
     {   flex: 7;
@@ -179,9 +220,10 @@ main p
         margin: 0px 30px 10px 30px;   }
 footer
     {   text-align: center; 
-        font-size: 0.70em;
+        font-size: 20px;
         font-style: italic; 
-        margin-top: 30px; }
+        margin-top: 30px;
+        border-top: solid black 2px; }
 #worksList a
     {   text-decoration: none;
         padding: 10px;
@@ -201,6 +243,9 @@ footer
         height: auto;   }
 
 footer{
-    font-size: 20px;
-    border-top: solid black 2px;
+    
+    
+}
+#fanMail{
+    padding-left: 30px;
 }
